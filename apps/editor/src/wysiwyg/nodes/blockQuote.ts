@@ -33,13 +33,4 @@ export class BlockQuote extends NodeSchema {
   commands(): EditorCommand {
     return () => (state, dispatch) => wrapIn(state.schema.nodes.blockQuote)(state, dispatch);
   }
-
-  keymaps() {
-    const blockQutoeCommand = this.commands()();
-
-    return {
-      'Alt-q': blockQutoeCommand,
-      'Alt-Q': blockQutoeCommand,
-    };
-  }
 }

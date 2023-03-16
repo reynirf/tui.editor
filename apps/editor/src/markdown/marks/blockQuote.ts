@@ -75,11 +75,7 @@ export class BlockQuote extends Mark {
   }
 
   keymaps() {
-    const blockQuoteCommand = this.commands()();
-
     return {
-      'alt-q': blockQuoteCommand,
-      'alt-Q': blockQuoteCommand,
       Enter: this.extendBlockQuote(),
     };
   }
