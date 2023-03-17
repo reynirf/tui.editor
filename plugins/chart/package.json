@@ -1,5 +1,5 @@
 {
-  "name": "@toast-ui/editor-plugin-chart",
+  "name": "glaze-text-editor-plugin-chart",
   "version": "3.0.1",
   "description": "TOAST UI Editor : Chart Plugin",
   "keywords": [

@@ -1,4 +1,4 @@
-import type { PluginContext, PluginInfo } from '@toast-ui/editor';
+import type { PluginContext, PluginInfo } from 'glaze-text-editor';
 
 export interface PluginOptions {
   minWidth: number;

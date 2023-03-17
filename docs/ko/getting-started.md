@@ -9,15 +9,15 @@ TOAST UI Editor는 패키지 매니저를 이용하거나, 직접 소스 코드�
 각 패키지 매니저가 제공하는 CLI 도구를 사용하면 쉽게 패키지를 설치할 수 있다. npm 사용을 위해선 [Node.js](https://nodejs.org/ko/)를 미리 설치해야 한다.
 
 ```sh
-$ npm install --save @toast-ui/editor # 최신 버전
-$ npm install --save @toast-ui/editor@<version> # 특정 버전
+$ npm install --save glaze-text-editor # 최신 버전
+$ npm install --save glaze-text-editor@<version> # 특정 버전
 ```
 
 npm을 통해 설치했다면, 아래와 같은 구조로 TOAST UI Editor가 설치된 것을 볼 수 있다.
 
 ```
 - node_modules/
-   ├─ @toast-ui/editor/
+   ├─ glaze-text-editor/
    │     ├─ dist/
    │     │    ├─ toastui-editor.js
    │     │    ├─ toastui-editor-viewer.js
@@ -84,13 +84,13 @@ TOAST UI Editor(이하 '에디터'로 명시)가 생성될 컨테이너 요소�
 - ES6 모듈
 
 ```javascript
-import Editor from '@toast-ui/editor';
+import Editor from 'glaze-text-editor';
 ```
 
 - CommonJS
 
 ```javascript
-const Editor = require('@toast-ui/editor');
+const Editor = require('glaze-text-editor');
 ```
 
 #### 브라우저 환경에서의 namespace 사용
@@ -108,13 +108,13 @@ const Editor = toastui.Editor;
 - ES6 모듈
 
 ```javascript
-import '@toast-ui/editor/dist/toastui-editor.css'; // Editor 스타일
+import 'glaze-text-editor/dist/toastui-editor.css'; // Editor 스타일
 ```
 
 - CommonJS
 
 ```javascript
-require('@toast-ui/editor/dist/toastui-editor.css');
+require('glaze-text-editor/dist/toastui-editor.css');
 ```
 
 #### CDN 환경

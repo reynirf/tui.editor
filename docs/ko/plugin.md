@@ -4,11 +4,11 @@ TOAST UI Editor(이하 '에디터'라고 명시)는 기본으로 지원하지 �
 
 | 플러그인 명 | 패키지 명 | 설명 |
 | --- | --- | --- |
-| [`chart`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | [`@toast-ui/editor-plugin-chart`](https://www.npmjs.com/package/@toast-ui/editor-plugin-chart) | 차트를 렌더링하기 위한 플러그인 |
-| [`code-syntax-highlight`](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) | [`@toast-ui/editor-plugin-code-syntax-highlight`](https://www.npmjs.com/package/@toast-ui/editor-plugin-code-syntax-highlight) | 코드 하이라이팅을 위한 플러그인 |
-| [`color-syntax`](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) | [`@toast-ui/editor-plugin-color-syntax`](https://www.npmjs.com/package/@toast-ui/editor-plugin-color-syntax) | 컬러피커 사용을 위한 플러그인 |
-| [`table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) | [`@toast-ui/editor-plugin-table-merged-cell`](https://www.npmjs.com/package/@toast-ui/editor-plugin-table-merged-cell) | 병합 테이블 셀을 사용하기 위한 플러그인 |
-| [`uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml) | [`@toast-ui/editor-plugin-uml`](https://www.npmjs.com/package/@toast-ui/editor-plugin-uml) | UML 사용을 위한 플러그인 |
+| [`chart`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | [`glaze-text-editor-plugin-chart`](https://www.npmjs.com/package/glaze-text-editor-plugin-chart) | 차트를 렌더링하기 위한 플러그인 |
+| [`code-syntax-highlight`](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) | [`glaze-text-editor-plugin-code-syntax-highlight`](https://www.npmjs.com/package/glaze-text-editor-plugin-code-syntax-highlight) | 코드 하이라이팅을 위한 플러그인 |
+| [`color-syntax`](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) | [`glaze-text-editor-plugin-color-syntax`](https://www.npmjs.com/package/glaze-text-editor-plugin-color-syntax) | 컬러피커 사용을 위한 플러그인 |
+| [`table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) | [`glaze-text-editor-plugin-table-merged-cell`](https://www.npmjs.com/package/glaze-text-editor-plugin-table-merged-cell) | 병합 테이블 셀을 사용하기 위한 플러그인 |
+| [`uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml) | [`glaze-text-editor-plugin-uml`](https://www.npmjs.com/package/glaze-text-editor-plugin-uml) | UML 사용을 위한 플러그인 |
 
 ## 플러그인 설치 및 사용
 
@@ -16,18 +16,18 @@ TOAST UI Editor(이하 '에디터'라고 명시)는 기본으로 지원하지 �
 
 ### 패키지 매니저(npm)를 통한 설치
 
-CLI를 사용하여 각 플러그인을 설치할 수 있다. 설치할 플러그인의 이름을 아래의 `${pluginName}`에 작성하여 설치한다. 예를 들어 `chart` 플러그인을 설치할 경우 `npm install @toast-ui/editor-plugin-chart`로 설치한다.
+CLI를 사용하여 각 플러그인을 설치할 수 있다. 설치할 플러그인의 이름을 아래의 `${pluginName}`에 작성하여 설치한다. 예를 들어 `chart` 플러그인을 설치할 경우 `npm install glaze-text-editor-plugin-chart`로 설치한다.
 
 ```sh
-$ npm install --save @toast-ui/editor-plugin-${pluginName} 
-$ npm install --save @toast-ui/editor-plugin-${pluginName}@<version>
+$ npm install --save glaze-text-editor-plugin-${pluginName} 
+$ npm install --save glaze-text-editor-plugin-${pluginName}@<version>
 ```
 
 npm을 통해 설치할 경우 아래처럼 `node_modules`에 설치된다.
 
 ```
 - node_modules/
-   ├─ @toast-ui/editor-plugin-${pluginName}
+   ├─ glaze-text-editor-plugin-${pluginName}
    │     ├─ dist/
    │     │    ├─ toastui-editor-plugin-${pluginName}.js
    │     │    ├─ ...
@@ -38,19 +38,19 @@ npm을 통해 설치할 경우 아래처럼 `node_modules`에 설치된다.
 - ES 모듈
 
 ```js
-import pluginFn from '@toast-ui/editor-plugin-${pluginName}';
+import pluginFn from 'glaze-text-editor-plugin-${pluginName}';
 ```
 
 - CommonJS
 
 ```js
-const pluginFn = require('@toast-ui/editor-plugin-${pluginName}');
+const pluginFn = require('glaze-text-editor-plugin-${pluginName}');
 ```
 
 예를 들어 `chart` 플러그인은 다음과 가져올 수 있다.
 
 ```js
-import chart from '@toast-ui/editor-plugin-chart';
+import chart from 'glaze-text-editor-plugin-chart';
 ```
 
 ### CDN을 통한 설치
@@ -111,9 +111,9 @@ const editor = new Editor({
 - ES 모듈
 
 ```js
-import Editor from '@toast-ui/editor';
-import chart from '@toast-ui/editor-plugin-chart';
-import uml from '@toast-ui/editor-plugin-uml';
+import Editor from 'glaze-text-editor';
+import chart from 'glaze-text-editor-plugin-chart';
+import uml from 'glaze-text-editor-plugin-uml';
 
 const editor = new Editor({
   // ...
@@ -358,7 +358,7 @@ return {
 플러그인 함수는 위에서 살펴본 다양한 프로퍼티를 정의하기 위해 `context` 매개변수로 필수적인 정보들을 사용할 수 있다. `context` 매개변수는 아래와 같은 정보들을 가지고 있다.
 
 * `eventEmitter`: 에디터의 `eventEmitter`와 동일하다. 에디터와의 통신을 위해 사용한다.
-* `usageStatistics`: 해당 플러그인을 `@toast-ui/editor`의 GA로 수집할지 결정한다.
+* `usageStatistics`: 해당 플러그인을 `glaze-text-editor`의 GA로 수집할지 결정한다.
 * `i18n`: 다국어 추가를 위한 인스턴스이다.
 * `pmState`: [prosemirror-state](https://prosemirror.net/docs/ref/#state)의 일부 모듈을 가진 프로퍼티이다.
 * `pmView`: [prosemirror-view](https://prosemirror.net/docs/ref/#view)의 일부 모듈을 가진 프로퍼티이다.

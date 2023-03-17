@@ -1,4 +1,4 @@
-declare module '@toast-ui/editor/dist/toastui-editor-viewer' {
+declare module 'glaze-text-editor/dist/toastui-editor-viewer' {
   import {
     Viewer,
     ViewerOptions,
@@ -16,7 +16,7 @@ declare module '@toast-ui/editor/dist/toastui-editor-viewer' {
     PluginInfo,
     PluginNodeViews,
     PluginCommandMap,
-  } from '@toast-ui/editor';
+  } from 'glaze-text-editor';
 
   export {
     ViewerOptions,

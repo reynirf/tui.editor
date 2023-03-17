@@ -145,6 +145,17 @@ module.exports = (env) => {
               test: /\.ts$|\.js$/,
               use: [
                 {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: [
+                      '@babel/preset-env',
+                      '@babel/preset-typescript', // Add this preset for TypeScript support
+                      '@babel/plugin-proposal-class-properties',
+                      '@babel/plugin-transform-classes',
+                    ],
+                  },
+                },
+                {
                   loader: 'ts-loader',
                   options: {
                     transpileOnly: true,

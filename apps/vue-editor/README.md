@@ -34,12 +34,12 @@ npm install --save @toast-ui/vue-editor
 
 ### Import
 
-You can use Toast UI Editor for Vue as a ECMAScript module or a CommonJS module. As this module does not contain CSS files, you should import `toastui-editor.css` from `@toast-ui/editor` in the script.
+You can use Toast UI Editor for Vue as a ECMAScript module or a CommonJS module. As this module does not contain CSS files, you should import `toastui-editor.css` from `glaze-text-editor` in the script.
 
 - ES Modules
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import 'glaze-text-editor/dist/toastui-editor.css';
 
 import { Editor } from '@toast-ui/vue-editor';
 ```
@@ -47,7 +47,7 @@ import { Editor } from '@toast-ui/vue-editor';
 - CommonJS
 
 ```js
-require('@toast-ui/editor/dist/toastui-editor.css');
+require('glaze-text-editor/dist/toastui-editor.css');
 
 const { Editor } = require('@toast-ui/vue-editor');
 ```
@@ -65,7 +65,7 @@ First implement `<editor/>` in the template.
 And then add `Editor` to the `components` in your component or Vue instance like this:
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import 'glaze-text-editor/dist/toastui-editor.css';
 
 import { Editor } from '@toast-ui/vue-editor';
 
@@ -79,7 +79,7 @@ export default {
 or
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import 'glaze-text-editor/dist/toastui-editor.css';
 
 import { Editor } from '@toast-ui/vue-editor';
 
@@ -130,7 +130,7 @@ const defaultOptions = {
   />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor.css';
+  import 'glaze-text-editor/dist/toastui-editor.css';
 
   import { Editor } from '@toast-ui/vue-editor';
 
@@ -161,7 +161,7 @@ First, you need to assign `ref` attribute of `<editor/>` and then you can use `i
   <editor ref="toastuiEditor" />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor.css';
+  import 'glaze-text-editor/dist/toastui-editor.css';
 
   import { Editor } from '@toast-ui/vue-editor';
 
@@ -237,7 +237,7 @@ First, you need to assign `ref` attribute of `<editor/>` and then you can use `i
 - ES Modules
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import 'glaze-text-editor/dist/toastui-editor-viewer.css';
 
 import { Viewer } from '@toast-ui/vue-editor';
 ```
@@ -245,7 +245,7 @@ import { Viewer } from '@toast-ui/vue-editor';
 - CommonJS
 
 ```js
-require('@toast-ui/editor/dist/toastui-editor-viewer.css');
+require('glaze-text-editor/dist/toastui-editor-viewer.css');
 
 const { Viewer } = require('@toast-ui/vue-editor');
 ```
@@ -263,7 +263,7 @@ First implement `<viewer />` in the template.
 And then add `Viewer` to the `components` in your component or Vue instance like this:
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import 'glaze-text-editor/dist/toastui-editor-viewer.css';
 
 import { Viewer } from '@toast-ui/vue-editor';
 
@@ -277,7 +277,7 @@ export default {
 or
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import 'glaze-text-editor/dist/toastui-editor-viewer.css';
 
 import { Viewer } from '@toast-ui/vue-editor';
 
@@ -302,7 +302,7 @@ new Vue({
   <viewer :initialValue="viewerText" height="500px" />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+  import 'glaze-text-editor/dist/toastui-editor-viewer.css';
 
   import { Viewer } from '@toast-ui/vue-editor';
 

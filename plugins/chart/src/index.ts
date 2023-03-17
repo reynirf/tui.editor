@@ -18,7 +18,7 @@
  * y.title: Month              => yAxis.title
  * $$
  */
-import type { PluginInfo, MdNode, PluginContext } from '@toast-ui/editor';
+import type { PluginInfo, MdNode, PluginContext } from 'glaze-text-editor';
 import Chart, {
   BaseOptions,
   LineChart,

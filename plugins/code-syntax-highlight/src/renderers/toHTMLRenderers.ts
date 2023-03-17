@@ -1,4 +1,4 @@
-import type { MdNode, CodeBlockMdNode } from '@toast-ui/editor';
+import type { MdNode, CodeBlockMdNode } from 'glaze-text-editor';
 import type { HTMLToken } from '@toast-ui/toastmark';
 import { PrismJs } from '@t/index';
 

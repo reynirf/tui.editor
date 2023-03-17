@@ -18,13 +18,13 @@ module.exports = {
     },
   },
   externals: {
-    '@toast-ui/editor': {
-      commonjs: '@toast-ui/editor',
-      commonjs2: '@toast-ui/editor',
+    'glaze-text-editor': {
+      commonjs: 'glaze-text-editor',
+      commonjs2: 'glaze-text-editor',
     },
-    '@toast-ui/editor/dist/toastui-editor-viewer': {
-      commonjs: '@toast-ui/editor/dist/toastui-editor-viewer',
-      commonjs2: '@toast-ui/editor/dist/toastui-editor-viewer',
+    'glaze-text-editor/dist/toastui-editor-viewer': {
+      commonjs: 'glaze-text-editor/dist/toastui-editor-viewer',
+      commonjs2: 'glaze-text-editor/dist/toastui-editor-viewer',
     },
   },
   module: {

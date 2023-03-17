@@ -31,7 +31,7 @@ The Viewer can be used by creating an instance with the constructor function. To
 - ES6 Modules
 
 ```javascript
-import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import Viewer from 'glaze-text-editor/dist/toastui-editor-viewer';
 ```
 
 - CommonJS
@@ -66,13 +66,13 @@ You need to add the CSS files needed for the Viewer. Import CSS files in node en
 - ES6 Modules
 
 ```javascript
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import 'glaze-text-editor/dist/toastui-editor-viewer.css';
 ```
 
 - CommonJS
 
 ```javascript
-require('@toast-ui/editor/dist/toastui-editor-viewer.css');
+require('glaze-text-editor/dist/toastui-editor-viewer.css');
 ```
 
 #### Using in Browser Environment by CDN
@@ -112,7 +112,7 @@ Find out more options [here](https://nhn.github.io/tui.editor/latest/ToastUIEdit
 Be careful not to load both an editor and a viewer at the same time because an editor already contains a viewer function, you can initialize with `Editor.factory()` of an editor and set the `viewer` option to value `true` in order to make the a viewer.
 
 ```js
-import Editor from '@toast-ui/editor';
+import Editor from 'glaze-text-editor';
 
 const viewer = Editor.factory({
   el: document.querySelector('#viewer'),

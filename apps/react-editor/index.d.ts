@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import ToastuiEditor, { EditorOptions, ViewerOptions, EventMap } from '@toast-ui/editor';
-import ToastuiEditorViewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import ToastuiEditor, { EditorOptions, ViewerOptions, EventMap } from 'glaze-text-editor';
+import ToastuiEditorViewer from 'glaze-text-editor/dist/toastui-editor-viewer';
 
 export interface EventMapping {
   onLoad: EventMap['load'];

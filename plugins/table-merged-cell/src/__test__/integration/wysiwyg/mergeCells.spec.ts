@@ -1,5 +1,5 @@
 import { oneLineTrim } from 'common-tags';
-import Editor from '@toast-ui/editor';
+import Editor from 'glaze-text-editor';
 import { assertWYSIWYGHTML, createEditor } from './helper/utils';
 import type { EditorView } from 'prosemirror-view';
 import CellSelection from './helper/cellSelection';

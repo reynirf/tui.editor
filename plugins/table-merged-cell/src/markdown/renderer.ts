@@ -1,4 +1,4 @@
-import type { CustomHTMLRenderer } from '@toast-ui/editor';
+import type { CustomHTMLRenderer } from 'glaze-text-editor';
 import type { OpenTagToken } from '@toast-ui/toastmark';
 import { MergedTableCellMdNode, MergedTableRowMdNode } from '@t/index';
 
